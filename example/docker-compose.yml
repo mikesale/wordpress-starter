@@ -18,12 +18,27 @@ services:
         volumes:
             - ./data:/data
             - ./scripts:/docker-entrypoint-initwp.d
+            - ./app:/app
+            - ./plugins:/home/admin/plugins
         environment:
             DB_NAME: wordpress
             DB_PASS: root
             PLUGINS: >-
-                academic-bloggers-toolkit
+                elementor
+                popup-trigger-url-for-elementor-pro
                 co-authors-plus
+                antispam-bee
+                kt-tinymce-color-grid
+                code-snippets
+                easy-theme-and-plugin-upgrades
+                wp-seopress
+                simple-css
+                stencil
+                storychief-acf
+                storychief
+                wp-show-posts
+                wp-analytify
+                wp-asset-clean-up
                 [WP-API]https://github.com/WP-API/WP-API/archive/master.zip
 
     db:

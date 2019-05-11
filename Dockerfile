@@ -1,4 +1,4 @@
-ARG PHP_VERSION=7.2
+ARG PHP_VERSION=7.3
 FROM php:${PHP_VERSION}-apache
 ARG VERSION=latest
 LABEL maintainer="Derek P Sifford <dereksifford@gmail.com>" \
